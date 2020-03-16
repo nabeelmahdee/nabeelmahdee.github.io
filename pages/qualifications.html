@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/qualifications.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/7eb70c3aa6.js" crossorigin="anonymous" SameSite=None></script>
+    <script src="../js/jquery.js"></script>
+    <title>Nabeel Ahmed Mahdee</title>
+</head>
+<body>
+    <div class="app">
+        <nav class="dropdown">
+            <div class="topbar">
+                <i class="fa fa-bars bars" id="bars"></i>
+                <a href="../index.html" id="name"><strong>Nabeel Ahmed Mahdee</strong></a>
+            </div>
+            <div class="dditems" style="display: none;">
+                <a href="" class="ddlinks">Qualifications</a>
+                <a href="" class="ddlinks">Skills</a>
+                <a href="" class="ddlinks">Work Experience</a>
+                <a href="" class="ddlinks">Education</a>
+                <a href="" class="ddlinks">Contact Me</a>
+            </div>
+        </nav>
+        <div class="qual1">
+            <p>
+                Web Design and Development
+            </p>
+            <p>
+                Well-versed in <strong>HTML</strong> and <strong>CSS</strong> and developing mobile web applications using technologies like <strong>JavaScript, ES6 and jQuery</strong>. Knowledge of making <strong>AJAX</strong> calls and working with <strong>JSON</strong> files; Fair understanding of <strong>User Interface design</strong> and <strong>wireframing</strong>. 
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    const bars = $(".bars");
+    const dditems = $(".dditems");
+    bars.click(function(){
+        dditems.toggle(200);
+    });
+</script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabeel Ahmed Mahdee</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/7eb70c3aa6.js" crossorigin="anonymous" SameSite=None></script>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <div class="app"> <!-- TODO: Need to add media query for landscape and pc mode and remove this div -->
+    <nav class="dropdown">
+        <div class="topbar">
+            <i class="fa fa-bars bars" id="bars"></i>
+            <a href="#" id="name"><strong>Nabeel Ahmed Mahdee</strong></a>
+        </div>
+        <div class="dditems" style="display: none;">
+            <a href="pages/qualifications.html" class="ddlinks">Qualifications</a>
+            <a href="" class="ddlinks">Skills</a>
+            <a href="" class="ddlinks">Work Experience</a>
+            <a href="" class="ddlinks">Education</a>
+            <a href="" class="ddlinks">Contact Me</a>
+        </div>
+    </nav>
+    <!-- Image Section -->
+    <div class="image">
+        <img src="images/imagebw.jpg" alt="My Image" id="myimage">
+    </div>
+    <section class="aboutme">
+        <h1>Nabeel Ahmed Mahdee</h1>
+        <h3>Web Developer</h3>
+        <p>Passionate and responsible software engineering graduate with competent technical knowledge, positive attitude, and great time management skills looking for a full-time position in an innovative work environment.</p>
+    </section>
+    <!-- Social Media Links -->
+    <div class="social">
+        <div class="hello"> 
+            Let's get in touch!
+        </div>
+        <div class="sociallinks">
+            <div class="linkedin">
+                <i class="fab fa-linkedin-in smicon" id="linkedin"></i>
+            </div>
+            <div class="instagram">
+                <i class="fab fa-instagram smicon" id="instagram"></i>
+            </div>
+            <div class="discord">
+                <i class="fab fa-discord smicon" id="discord"></i>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <address> Nabeel Mahdee &copy; All Rights Reserved</address>
+    </footer>
+</div>
+</body>
+<script>
+    const bars = $(".bars");
+    const dditems = $(".dditems");
+    bars.click(function(){
+        dditems.toggle(200);
+    });
+</script>
+</html>
