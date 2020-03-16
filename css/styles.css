@@ -123,5 +123,6 @@ section.image { margin: 0; height: 400px; }
 address { 
     text-align: center;
     padding: 0.5rem 0;
+    font-size: small;
  }
 
