@@ -25,11 +25,13 @@ body {
     color: black;
 }
 
-/* .app {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-} */
+@media only screen and (min-width: 600px) {
+    .app {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 h1, h3 {
     font-family: 'Oswald', sans-serif; 
@@ -39,7 +41,6 @@ h1, h3 {
 }
 
 nav { 
-    /* background-color: rgb(166, 143, 187);  */
     padding: .55em .5em;
     display: flex;
     flex-direction: column;
@@ -53,7 +54,6 @@ nav {
 .dditems {
     display: flex;
     flex-direction: column;
-    /* background-color: #1c7272; */
     padding: 1em;
     align-items: center;
 }
