@@ -1,6 +1,9 @@
 
-section.image { margin: 0; height: 400px; }
-
+img {
+    width: 380px;
+    height: 80%;
+    margin: 0;
+}
 .aboutme {
  /* background-color: brown; */
  padding-top: .8em;
