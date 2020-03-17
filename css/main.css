@@ -7,11 +7,12 @@ html {
   }
 
 body {
-    margin: 0;  
     display: flex;
     justify-content: space-around;
     font-family: 'Raleway', sans-serif;
 }
+
+.dropdown { padding-left: 0.8em; padding-right: 0.8em; }
 
 .topbar {
     display: flex;
@@ -24,11 +25,11 @@ body {
     color: black;
 }
 
-.app {
+/* .app {
     width: 400px;
     display: flex;
     flex-direction: column;
-}
+} */
 
 h1, h3 {
     font-family: 'Oswald', sans-serif; 
