@@ -32,20 +32,20 @@ img {
     padding: 0.2rem 1.3rem;
 }
 
-/* #linkedin {
+#linkedin {
     font-size: 1.4rem;
-    padding: 5px;
+    color: black;
 }
 
 #instagram {
     font-size: 1.4rem;
-    padding: 5px;
+    color: black;
 }
 
 #discord{
     font-size: 1.4rem;
-    padding: 5px;
-} */
+    color: black;
+} 
 
 .social {
     display: flex;
