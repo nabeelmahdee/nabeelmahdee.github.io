@@ -14,6 +14,6 @@ $(document).ready(
             bars.toggleClass("rotate");
         });
 
-        
+
     }  
   ); // end of doc ready
