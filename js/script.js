@@ -14,6 +14,10 @@ $(document).ready(
             bars.toggleClass("rotate");
         });
 
+        $("#discord").click(function(){
+            alert("Add me on discord: nabeel#6565")
+        })
+
 
     }  
   ); // end of doc ready
