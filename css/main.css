@@ -76,4 +76,5 @@ address {
 
 .rotate {
     transform: rotate(90deg);
+    background-color: black;
 }
