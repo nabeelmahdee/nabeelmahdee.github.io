@@ -73,7 +73,7 @@ address {
     padding: 0.5rem 0;
     font-size: smaller;
  }
-/* test */
+
 .rotate {
     transform: rotate(90deg);
     color: white;
