@@ -13,5 +13,7 @@ $(document).ready(
             dditems.toggle(200);
             bars.toggleClass("rotate");
         });
+
+        
     }  
   ); // end of doc ready
