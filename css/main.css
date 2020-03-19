@@ -12,7 +12,9 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.dropdown { padding-left: 0.8em; padding-right: 0.8em; }
+.dropdown { 
+    padding: 0.5em 0.5em;
+}
 
 .topbar {
     display: flex;
@@ -20,10 +22,6 @@ body {
     justify-content: space-between;
 }
 
-.topbar a {
-    text-decoration: none;
-    color: black;
-}
 
 @media only screen and (min-width: 600px) {
     .app {
@@ -46,7 +44,8 @@ nav {
     flex-direction: column;
 }
 
-.bars {
+
+#bars {
     padding: 10px;
     font-size: 1.3rem;
 }
@@ -62,11 +61,19 @@ nav {
     display: flex;
     padding: 1em 2em;
     text-decoration: none;
-    color: black;
 }
+
+.ddlinks:hover {
+    text-decoration: underline;
+}
+
 
 address { 
     text-align: center;
     padding: 0.5rem 0;
     font-size: smaller;
  }
+
+.rotate {
+    transform: rotate(90deg);
+}
