@@ -19,7 +19,11 @@ $(document).ready(
         });
 
         $("#discord").click(function(){
-            alert("Add me on discord: nabeel#6565")
-        })
+            alert("Add me on discord: nabeel#6565");
+        });
+
+        ddlinks.hover(function(){
+        $('nav').css("padding","7px");    
+        });
     }  
   ); // end of doc ready
