@@ -1,0 +1,24 @@
+.btnContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* background-color: aliceblue; */
+    padding: 0.40em;
+}
+.btnContainer a {
+    padding: .70em 4em;
+    text-decoration: none;
+    font-weight: 550;
+    color: black;
+    border: 2px solid black;
+}
+
+.btnContainer a:active {
+    color: white;
+    background-color: rgb(37, 35, 35);
+    border: 2px solid white;
+    /* transform: translate(2px,2px); */
+    -webkit-box-shadow: 2px 3px 8px -2px rgba(105,105,105,1);
+    -moz-box-shadow: 2px 3px 8px -2px rgba(105,105,105,1);
+    box-shadow: 2px 3px 8px -2px rgba(105,105,105,1);
+}

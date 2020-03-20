@@ -23,7 +23,7 @@ $(document).ready(
         });
 
         ddlinks.hover(function(){
-        $('nav').css("padding","7px");    
+        $('nav').css("padding","7px");  
         });
     }  
   ); // end of doc ready
