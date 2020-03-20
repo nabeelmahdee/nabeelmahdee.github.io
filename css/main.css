@@ -50,15 +50,40 @@ nav {
     align-items: center;
 }
 
+
 .ddlinks {
     display: flex;
     padding: 1em 2em;
     text-decoration: none;
 }
-
 .ddlinks:hover {
     text-decoration: underline;
 }
+@media only screen and (max-width: 600px) {
+    .ddlinks {
+        display: flex;
+        /* padding: 1em 2em; */
+        padding-bottom: 1.5px;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        text-decoration: none;
+        margin: .8em;
+    }
+    
+    .ddlinks:hover {
+        /* text-decoration: underline; */
+        border-bottom: 1px solid black;
+        padding-bottom: 1.5px;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        margin: .8em;
+        text-decoration: none;
+    }
+}
+
+
 
 h1, h3 {
     font-family: 'Oswald', sans-serif; 
