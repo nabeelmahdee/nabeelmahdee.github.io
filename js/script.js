@@ -9,6 +9,10 @@ $(document).ready(
         topbarlinks.css("color","black");
         topbarlinks.css("text-decoration","none");
 
+        topbarlinks.click(function(){
+            topbarlinks.css("color","grey");
+        })
+
         bars.click(function () {
             dditems.toggle(200);
             bars.toggleClass("rotate");
@@ -17,7 +21,5 @@ $(document).ready(
         $("#discord").click(function(){
             alert("Add me on discord: nabeel#6565")
         })
-
-
     }  
   ); // end of doc ready
