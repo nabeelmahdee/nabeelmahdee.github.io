@@ -23,6 +23,7 @@ body {
     margin: 0 auto;
     padding: 5.9em 0 2.5em 0;
 }
+
 @media only screen and (max-width: 800px) {
     .content-wrap {
         padding: 2.5em 0;
