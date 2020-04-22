@@ -227,9 +227,8 @@ footer {
 
 .btnContainer a:active {
     color: white;
-    background-color: rgb(37, 35, 35);
     border: 2px solid white;
-    box-shadow: 2px 3px 8px -2px rgba(105,105,105,1);
+    /* box-shadow: 2px 3px 8px -2px rgba(105,105,105,1); */
 }
 
 #linkedin {
