@@ -17,11 +17,16 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.content-wrap{
+.content-wrap {
     max-width: 900px;
     width: 90%;
     margin: 0 auto;
-    padding: 2.5em 0;
+    padding: 5.9em 0 2.5em 0;
+}
+@media only screen and (max-width: 800px) {
+    .content-wrap {
+        padding: 2.5em 0;
+    }
 }
 
 /* Header */
@@ -31,7 +36,7 @@ body {
     /* grid-template-rows: 1fr 1fr; */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .container-1{
         display: block;
     }
@@ -48,7 +53,7 @@ body {
     margin-top: 0;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     .container-1 > h1, .container-1 > h3 {
         text-align: left; 
     }
@@ -63,7 +68,7 @@ body {
     height: 50px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     .container-2{
         display: flex;
         flex-direction: column;
@@ -79,7 +84,7 @@ body {
     text-align: left;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     .container-2 > div:nth-child(1){ 
         order: 2;
     }   
@@ -101,7 +106,7 @@ body {
     align-items: center;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     .container-2 > div:nth-child(2){ 
         order: 1;
     }   
@@ -122,7 +127,7 @@ body {
     flex-direction: column;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     .container-2 > div:nth-child(3){ 
         order: 3;
     }   
@@ -136,7 +141,7 @@ body {
     margin-bottom: 0.4em;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     .container-2 > div:nth-child(1) > h4, .container-2 > div:nth-child(1) > p{   
         text-align: center;
     }
@@ -162,10 +167,10 @@ footer {
     justify-content: center;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     footer {
         display: block;
-        padding-top: 30em;
+        padding-top: 27em;
     }
 }
 
