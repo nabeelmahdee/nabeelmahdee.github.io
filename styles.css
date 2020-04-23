@@ -201,13 +201,17 @@ footer {
     display: flex;
     justify-content: center;
 }
+/* 
+padding: 2.5em 0;
+        margin: 0 0.2em;
+*/
 
 @media only screen and (max-width: 800px){
     footer {
         /* display: block; */
         width: 85%;
-        margin: 0 auto;
-        padding: 28em 2.6em 0.5em 0;
+        margin: auto auto auto 1.2em;
+        padding: 28em 0 2.5em 0;
     }
 }
 
@@ -223,16 +227,15 @@ footer {
 
    #linkedin {
     padding: 0 1.2em 0 1.2em;
-}
+    }
 
-#instagram {
-    padding: 0 1.2em 0 1.2em;
-}
+    #instagram {
+        padding: 0 1.2em 0 1.2em;
+    }
 
-#facebook{
-    padding: 0 1.2em 0 1.2em;
-}
-   
+    #facebook{
+        padding: 0 1.2em 0 1.2em;
+    } 
 }
 .sociallinks {
     display: flex;
