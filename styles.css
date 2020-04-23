@@ -29,6 +29,12 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+@media only screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .content-wrap {
     max-width: 900px;
     width: 90%;
@@ -68,9 +74,9 @@ body {
 }
 
 @media only screen and (max-width: 800px){
-    .container-1 > h1, .container-1 > h3 {
+    /* .container-1 > h1, .container-1 > h3 {
         text-align: left; 
-    }
+    } */
     .container-1 > h3 {
         font-family: 'Roboto', sans-serif;
     }
@@ -86,6 +92,7 @@ body {
     .container-2{
         display: flex;
         flex-direction: column;
+        align-content: center;
         order: -1, 1, 2;
     }
 }
@@ -149,6 +156,11 @@ body {
         font-family: 'Roboto', sans-serif;
         /* background-color: magenta; */
     }   
+    .container-2 > div:nth-child(3) h4{ 
+        /* font-family: 'Roboto', sans-serif; */
+        /* background-color: magenta; */
+        text-align: center;
+    }   
 }
 .container-2 > div:nth-child(3) > h4{
     padding-left: .4em;
@@ -159,12 +171,12 @@ body {
     .container-2 > div:nth-child(1) > h4, .container-2 > div:nth-child(1) > p{   
         text-align: center;
     }
-
+    
 }
 
 .contact {
     display: flex;
-    padding: 0.4em;
+    padding: 0.5em 0.4em 0.4em 0.4em;
 }
 
 #email {
@@ -172,6 +184,15 @@ body {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 800px){
+    .contact{
+        justify-content: center;
+    }
+}
+/* max-width: 900px;
+width: 90%;
+margin: 0 auto;
+padding: 5.9em 0 2.5em 0; */
 footer {
     max-width: 900px;
     width: 85%;
@@ -183,14 +204,35 @@ footer {
 
 @media only screen and (max-width: 800px){
     footer {
-        display: block;
-        padding-top: 27em;
+        /* display: block; */
+        width: 85%;
+        margin: 0 auto;
+        padding: 28em 2.6em 0.5em 0;
     }
 }
 
 .social {
     text-align: center;
     padding-top: 1.5em;
+}
+@media only screen and (max-width: 800px) {
+   .social {
+       display: flex;
+       flex-direction: column;
+   }
+
+   #linkedin {
+    padding: 0 1.2em 0 1.2em;
+}
+
+#instagram {
+    padding: 0 1.2em 0 1.2em;
+}
+
+#facebook{
+    padding: 0 1.2em 0 1.2em;
+}
+   
 }
 .sociallinks {
     display: flex;
@@ -206,6 +248,12 @@ footer {
 .social > address {
     padding-top: 2em;
     font-size: smaller;
+}
+
+@media only screen and (max-width: 800px){
+    .social > address {
+        padding-top: 1em;
+    }
 }
 
 
