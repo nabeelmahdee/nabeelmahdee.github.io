@@ -42,6 +42,9 @@
             margin: 0;
             padding-top: 1em;
         }
+        #message {
+            
+        }
     </style>
 </head>
 
@@ -50,19 +53,19 @@
         <!-- Nav Bar -->
         <nav class="nav-wrapper teal">
             <div class="container">
-                <a href="#" class="brand-logo">SurmaTech Inc</a>
+                <a href="../index.html" class="brand-logo">SurmaTech Inc</a>
                 <a href="" class="sidenav-trigger" data-target="mobile-menu">
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
                 <ul class="sidenav teal lighten-2" id="mobile-menu">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -71,9 +74,23 @@
         <!-- Main Content -->
         <section class="container" id="main-content">
             <div class="content">
-                <h1>Hello!</h1>
-                <p>We are a small web development company based in the GTA.</p>
-                <p>We specialize in website development and web application development</p>
+                <h1>Contact Form</h1>
+                <div class="col l8 s8">
+                    <h6 class="center"><a href="./pages/contact.html">Contact</a></h6>
+                    <form action="">
+                        <div class="input-field">
+                            <input type="text" id="email">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="input-field">
+                                <button class="btn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
