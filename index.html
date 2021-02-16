@@ -1,110 +1,208 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <!--Import Google Icon Font-->
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js" async></script>
-    <title>SurmaTech Inc</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script type="text/javascript" src="js/materialize.min.js" defer></script>
     <style>
-        .content {
-            min-height: 300px;
-            padding: 3em;
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+        /* Media Queries */
+        /* Extra small devices (phones, 600px and down) */
+        /* @media only screen and (max-width: 600px) {...} */
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        /* @media only screen and (min-width: 600px) {...} */
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        /* @media only screen and (min-width: 768px) {...} */
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        /* @media only screen and (min-width: 992px) {...} */
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        /* @media only screen and (min-width: 1200px) {...} */
+
+        html {
+            box-sizing: border-box;
         }
 
-        main {
-            background-color: rgb(220, 228, 228);
-            min-height: 500px;
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
         }
 
-        h6 {
-            padding-bottom: .2em;
+        body {
+            font-family: 'Montserrat', sans-serif;
         }
 
-        main * {
-            margin: 0;
+        /* top */
+        .top {
+            display: flex;
+            justify-content: center;
         }
 
-        footer {
-            background-color: rgb(86, 131, 131);
-            padding-bottom: 1em;
+        /* Navigation */
+
+        /* @media only screen and (min-width: 900px) { */
+
+        .centering {
+            display: flex;
+            justify-content: center;
         }
 
-        h4 {
-            margin: 0;
-            padding-top: 1em;
+        .rowing {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-elems {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .nav-elems>* {
+            padding: 1em 1em 1em 4em;
+            color: rgb(182, 144, 144);
+            display: flex;
+            justify-content: center;
+        }
+
+        /* } */
+
+        .nav-elems>*>* {
+            color: white;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: medium;
+        }
+
+        .nav-elems>*>*:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .navigation-section {
+            background-color: teal;
+        }
+
+        .service-card {
+            width: 18em;
+            height: 18em;
+            padding: 2em;
+            margin-bottom: 3em;
+        }
+
+        .card-img {
+            height: 150px;
+            width: 250px;
+        }
+
+        .service-card:nth-child() {
+            font-weight: bold;
+        }
+
+        .bolding-titles {
+            font-weight: bold;
+        }
+
+        .footer {
+            /* background-color: rgb(56, 68, 68); */
         }
     </style>
+
 </head>
 
 <body>
-    <header>
-        <!-- Nav Bar -->
-        <nav class="nav-wrapper teal">
-            <div class="container">
-                <a href="#" class="brand-logo">SurmaTech Inc</a>
-                <a href="" class="sidenav-trigger" data-target="mobile-menu">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
-                </ul>
-                <ul class="sidenav teal lighten-2" id="mobile-menu">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
-                </ul>
+    <section class="top container">
+        <h3>Surmatech Solutions Inc.</h3>
+    </section>
+    <section class="navigation-section container">
+        <div class="row nav-elems">
+            <div class="col l3 s12 m4"><a href="#">About Us</a></div>
+            <div class="col l3 s12 m4"><a href="#">Software Development</a></div>
+            <div class="col l3 s12 m4"><a href="#">IT Services</a></div>
+            <div class="col l3 s12 m4"><a href="#">Contact Us</a></div>
+        </div>
+    </section>
+    <main>
+        <section class="mid-home container centering">
+            <div class="row">
+                <div class="col l4 rowing">
+                    <div class="service-card">
+                        <img class="card-img" src="./Assets/images/Photo by Christopher Gower on Unsplash.jpg" alt="">
+                        <p class="bolding-titles">Small Office Setup</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime ex quos odio pariatur.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <img class="card-img" src="./Assets/images/Photo by Taylor Vick on Unsplash.jpg" alt="">
+                        <p class="bolding-titles">Network Setup</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime ex quos odio pariatur.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <img class="card-img" src="./Assets/images/Photo by Radowan Nakif Rehan on Unsplash.jpg" alt="">
+                        <p class="bolding-titles">Software Development</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime ex quos odio pariatur.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
-    <main class="">
-        <!-- Main Content -->
-        <section class="container" id="main-content">
-            <div class="content">
-                <h1>Hello!</h1>
-                <p>We are a small web development company based in the GTA.</p>
-                <p>We specialize in website development and web application development</p>
+        </section>
+        <section class="container footer">
+            <hr style="border: #23c0b3 0.1px solid;">
+            <div class="row">
+                <div class="col l4">
+                    <p>
+                    <p class="bolding-titles">Head Office</p>
+                    SurmaTech Inc.<br>
+                    530 Bartleman Terrace<br>
+                    Milton, ON<br>
+                    L9T 9A2
+                    </p>
+                </div>
+                <div class="row col l4">
+                    <div class="col">
+                        <p>
+                        <p class="bolding-titles">Office Hours: </p>
+                        Mon - Fri: 9am - 5pm<br>
+                        Weekends: closed<br>
+                        </p>
+                        <p class="bolding-titles">Helpdesk: </p>
+                        Mon - Fri: 24 hrs<br>
+                        Weekends: 9am to 4pm<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row col l4">
+                    <h6 class="">Contact Us</h6>
+                    <form action="">
+                        <div class="input-field">
+                            <input type="text" id="email">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="input-field">
+                                <button class="btn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <!-- Footer Content -->
-        <div class="row">
-            <h4 class="center">SurmaTech Inc.</h4>
-        </div>
-        <div class="row container center">
-            <div class="col l5 s8">
-                <p>
-                    SurmaTech Inc.<br>
-                    email us <br>
-                    <a href="mailto:info@surmatech.ca">info@surmatech.ca</a>.
-                </p>
-            </div>
-            <div class="col l7 s8">
-                <p>Discover more</p>
-                <ul class="">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#"><a href="./pages/contact.html">Contact</a></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script>
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-        });
-    </script>
 </body>
 
 </html>
